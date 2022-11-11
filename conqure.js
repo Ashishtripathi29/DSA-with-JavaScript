@@ -2,9 +2,9 @@
 // should be an sorted array and pass an value which you want to search if there is value than return index of value other wise return -1 
 function conqure(arr,num){
     let min=0;
-    let max=arr.length;
+    let max=arr.length-1;
     
-    while(min<max){
+    while(min<=max){
       // start search vealue from middle if value is greater than mid value then divide array from mid and search value mid to last 
       // repeate this concept untill get the value
         let middle=Math.floor((min+max)/2)
