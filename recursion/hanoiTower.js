@@ -1,4 +1,4 @@
-// print the step to transfer the dist source to destination
+// print the step to transfer the disk source to destination
 
 function printStep(number,source,helper,destination){
 
