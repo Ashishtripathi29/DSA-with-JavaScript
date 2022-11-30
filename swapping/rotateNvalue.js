@@ -1,6 +1,4 @@
 // there is an array and givan a value we have to rotate owr array n time anticlock wise
-
-
 // [1,2,3,4,5] n=2   output  [4,5,1,2,3]
 
 
