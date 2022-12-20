@@ -1,4 +1,2 @@
 
-// console.log(list.pop())
-// console.log(list.pop())
-// console.log(list.pop())
+list.unshift("hii2")

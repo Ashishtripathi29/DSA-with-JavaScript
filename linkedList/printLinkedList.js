@@ -57,18 +57,63 @@ class SinglyLinkedList{
         this.length--;
         return out.val
     }
+    unshift(val){
+                if(!val) return ;
+                let newely=new node(val)
+                if(this.head==null){
+                    this.head=newely
+                    this.tail=newely    
+                }
+                else{
+
+                    newely.next=this.head
+                    this.head=newely
+                   
+                }
+                this.length++
+    }
+
+    shift(){
+        if(this.length==0) return undefined
+        if(this.head!==null && this.length>1){
+            let cur=this.head
+            this.head=cur.next
+            this.length--
+            return cur.val
+        }
+        else{
+            let cur=this.head
+            this.head=null
+            this.tail=null
+            this.length=0
+            return cur.val
+        }
+    }
 }
 
 
 var list = new SinglyLinkedList()
-list.push("HELLO")
-list.push("GOODBYE")
-list.push("Ashish")
-list.push("Tripathi")
+// list.push("HELLO")
+// list.push("GOODBYE")
+// list.push("Ashish")
+// list.push("Tripathi")
 // list.traverse()
-console.log(list.pop())
-console.log(list.pop())
-console.log(list.pop())
-console.log(list.pop())
+// console.log(list.pop())
+// console.log(list.pop())
+// console.log(list.pop())
+// console.log(list.pop())
+
+list.unshift("hii")
+list.unshift("hii2")
+list.unshift("hii3")
+list.unshift("hii4")
+list.unshift("hii5")
 list.traverse()
+
+console.log(" "+list.shift())
+console.log(" "+list.shift())
+console.log(" "+list.shift())
+console.log(" "+list.shift())
+console.log(" "+list.shift())
+console.log(" "+list.shift())
 console.log(list)
