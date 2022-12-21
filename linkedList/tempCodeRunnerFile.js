@@ -1,2 +1,2 @@
-  // this.tail=this.head
-    // this.head=nextNode
+// everse()
+// list.traverse()
